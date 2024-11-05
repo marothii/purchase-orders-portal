@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Purchase Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<h1>Your Orders Await!</h1>
+<p>Click on an order to see the details!</p>
+<ul id="purchaseOrdersList"></ul>
+
+<div class="modal" id="orderModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Order Details</h2>
+        <p><strong>Address:</strong> <span id="orderAddress"></span></p>
+        <p><strong>Contact Person:</strong> <span id="orderContactPerson"></span></p>
+        <p><strong>Status:</strong> <span id="orderStatus"></span></p>
+
+        <h3>Order Items</h3>
+        <table id="orderItemsTable">
+            <thead>
+                <tr>
+                    <th>Product SKU</th>
+                    <th>Quantity Ordered</th>
+                    <th>Unit Price</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody id="orderItemsBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script> 
+</body>
+</html>
